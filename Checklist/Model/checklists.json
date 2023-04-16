@@ -1,0 +1,89 @@
+[
+    {
+        "id": 0,
+        "name": "after-start",
+        "aircraft": "p28r-201",
+        "items": [
+            {
+                "id": 0,
+                "name": "Throttle",
+                "state": ["1000 RPM"]
+            },
+            {
+                "id": 1,
+                "name": "Annunciator Lights",
+                "state": ["Check all Out"]
+            },
+            {
+                "id": 2,
+                "name": "Magneto Check",
+                "state": ["Check for Dead Cut"]
+            },
+            {
+                "id": 3,
+                "name": "Fuel Pump",
+                "state": ["OFF"]
+            },
+            {
+                "id": 4,
+                "name": "Fuel Pressure",
+                "state": ["Check"]
+            },
+            {
+                "id": 5,
+                "name": "Manifold Pressure",
+                "state": ["Check"]
+            },
+            {
+                "id": 6,
+                "name": "Fuel Flow",
+                "state": ["Check"]
+            },
+            {
+                "id": 7,
+                "name": "Ammeter",
+                "state": ["Check"]
+            },
+            {
+                "id": 8,
+                "name": "Voltage",
+                "state": ["Check"]
+            },
+            {
+                "id": 9,
+                "name": "Oil Pressure",
+                "state": ["Check"]
+            },
+            {
+                "id": 10,
+                "name": "Oil Temperature",
+                "state": ["Rising"]
+            },
+            {
+                "id": 11,
+                "name": "Avionics",
+                "state": ["ON"]
+            },
+            {
+                "id": 12,
+                "name": "Radios & Nav Aids",
+                "state": ["Set", "Check"]
+            },
+            {
+                "id": 13,
+                "name": "Transponder",
+                "state": ["GND", "7000"]
+            },
+            {
+                "id": 14,
+                "name": "HSI",
+                "state": ["Aligned"]
+            },
+            {
+                "id": 15,
+                "name": "Altimeters",
+                "state": ["Set"]
+            }
+        ]
+    }
+]
