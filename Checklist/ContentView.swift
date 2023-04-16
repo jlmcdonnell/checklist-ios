@@ -27,9 +27,11 @@ struct ChecklistGroup: View {
         ScrollView {
             VStack {
                 ForEach(checklists) { checklist in
+                    Spacer(minLength: 40)
                     ChecklistView(checklist: checklist)
                 }
             }.frame(maxWidth: .infinity)
+            Spacer(minLength: 80)
         }
     }
 }
@@ -37,26 +39,44 @@ struct ChecklistGroup: View {
 struct ChecklistView: View  {
     var checklist: Checklist
     
+    @State
+    var checkedItems = [Int: Bool]()
+    
     var body: some View {
         VStack {
-            Text(checklist.name)
+            HStack {
+                Text(checklist.name)
+                Spacer()
+                Button("Reset", action: { checkedItems.removeAll() })
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 12))
+            }
+            
             ForEach(Array(checklist.items.enumerated()), id: \.offset) { i, item in
-                HStack {
+                let checked = checkedItems[i] ?? false
+                let opacity = (checked) ? 0.3 : 1.0
+                
+                HStack(alignment: .firstTextBaseline) {
                     Text(
                         item.name
-                    ).padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12))
+                    )
+                        .font(.system(size: 24))
+                        .padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12))
                     Spacer()
-                    HStack {
+                    VStack(alignment: .trailing) {
                         ForEach(item.state, id: \.self) { state in
                             Text(state)
+                                .font(.system(size: 24))
                         }
                     }.padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12))
                 }
                 .background(Color(UIColor.systemGray6))
-                .frame(width: 330)
                 .cornerRadius(16)
+                .opacity(opacity)
+                .onTapGesture {
+                    checkedItems[i] = !(checkedItems[i] ?? false)
+                }
             }
-        }
+        }.frame(width: 500)
     }
 }
 

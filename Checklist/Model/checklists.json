@@ -1,7 +1,7 @@
 [
     {
         "id": 0,
-        "name": "after-start",
+        "name": "After Start / Warm Up",
         "aircraft": "p28r-201",
         "items": [
             {
@@ -22,7 +22,7 @@
             {
                 "id": 3,
                 "name": "Fuel Pump",
-                "state": ["OFF"]
+                "state": ["Off"]
             },
             {
                 "id": 4,
@@ -62,7 +62,7 @@
             {
                 "id": 11,
                 "name": "Avionics",
-                "state": ["ON"]
+                "state": ["On"]
             },
             {
                 "id": 12,
@@ -85,5 +85,272 @@
                 "state": ["Set"]
             }
         ]
+    },
+    {
+        "id": 1,
+        "name": "Taxi Check",
+        "aircraft": "p28r-201",
+        "items": [
+            {
+                "id": 0,
+                "name": "Brakes",
+                "state": ["Check"]
+            },
+            {
+                "id": 1,
+                "name": "Steering",
+                "state": ["Check"]
+            },
+            {
+                "id": 2,
+                "name": "Attitude Indicator",
+                "state": ["Stable"]
+            },
+            {
+                "id": 3,
+                "name": "Turn Coordinator",
+                "state": ["Check"]
+            },
+            {
+                "id": 4,
+                "name": "HSI",
+                "state": ["Check"]
+            },
+            {
+                "id": 5,
+                "name": "Compass",
+                "state": ["Check"]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Power Checks",
+        "aircraft": "p28r-201",
+        "items": [
+            {
+                "id": 0,
+                "name": "Parking Brake",
+                "state": ["Set"]
+            },
+            {
+                "id": 1,
+                "name": "Throttle",
+                "state": ["1000 RPM"]
+            },
+            {
+                "id": 2,
+                "name": "Fuel Selector",
+                "state": ["Fullest Tank"]
+            },
+            {
+                "id": 3,
+                "name": "Propeller",
+                "state": ["Full Forward"]
+            },
+            {
+                "id": 4,
+                "name": "Mixture",
+                "state": ["Rich"]
+            },
+            {
+                "id": 5,
+                "name": "Annunciator Lights",
+                "state": ["Check"]
+            },
+            {
+                "id": 6,
+                "name": "Oil Temperature",
+                "state": ["Check"]
+            },
+            {
+                "id": 7,
+                "name": "Throttle",
+                "state": ["2000 RPM"]
+            },
+            {
+                "id": 8,
+                "name": "Brakes",
+                "state": ["Holding"]
+            },
+            {
+                "id": 9,
+                "name": "Engine Gauges",
+                "state": ["Check"]
+            },
+            {
+                "id": 10,
+                "name": "Magnetos",
+                "state": ["Max 175 RPM Drop", "Max 50 RPM Difference"]
+            },
+            {
+                "id": 11,
+                "name": "Alternate Air",
+                "state": ["Check", "Closed"]
+            },
+            {
+                "id": 12,
+                "name": "Propeller Cycle (x3)",
+                "state": ["Check"]
+            },
+            {
+                "id": 13,
+                "name": "Propeller",
+                "state": ["Full Forward"]
+            },
+            {
+                "id": 14,
+                "name": "Manifold Pressure",
+                "state": ["Check"]
+            },
+            {
+                "id": 15,
+                "name": "Fuel Flow",
+                "state": ["Check"]
+            },
+            {
+                "id": 16,
+                "name": "Ammeter",
+                "state": ["Check"]
+            },
+            {
+                "id": 17,
+                "name": "Voltage",
+                "state": ["Check"]
+            },
+            {
+                "id": 18,
+                "name": "Suction Gauge",
+                "state": ["4.9 - 5.1"]
+            },
+            {
+                "id": 19,
+                "name": "Throttle",
+                "state": ["Closed"]
+            },
+            {
+                "id": 20,
+                "name": "RPM",
+                "state": ["Above 550"]
+            },
+            {
+                "id": 21,
+                "name": "Oil Pressure",
+                "state": ["Above 25 PSI"]
+            },
+            {
+                "id": 22,
+                "name": "Throttle",
+                "state": ["1000 RPM"]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Pre Take-Off",
+        "aircraft": "p28r-201",
+        "items": [
+            {
+                "id": 0,
+                "name": "Mixture",
+                "state": ["Rich"]
+            },
+            {
+                "id": 1,
+                "name": "Propeller",
+                "state": ["Full Forward"]
+            },
+            {
+                "id": 2,
+                "name": "Fuel Pump",
+                "state": ["On"]
+            },
+            {
+                "id": 3,
+                "name": "Fuel Quantity",
+                "state": ["Confirm"]
+            },
+            {
+                "id": 4,
+                "name": "Fuel Selector",
+                "state": ["Fullest Tank"]
+            },
+            {
+                "id": 5,
+                "name": "Engine Instruments",
+                "state": ["Check"]
+            },
+            {
+                "id": 6,
+                "name": "Magnetos",
+                "state": ["Both"]
+            },
+            {
+                "id": 7,
+                "name": "Electric Trim",
+                "state": ["Check"]
+            },
+            {
+                "id": 8,
+                "name": "Auto Pilot",
+                "state": ["Off"]
+            },
+            {
+                "id": 9,
+                "name": "Attitude Indicator",
+                "state": ["Erect"]
+            },
+            {
+                "id": 10,
+                "name": "HSI",
+                "state": ["Aligned"]
+            },
+            {
+                "id": 11,
+                "name": "Altimeters",
+                "state": ["Set"]
+            },
+            {
+                "id": 12,
+                "name": "Alternate Air",
+                "state": ["Closed"]
+            },
+            {
+                "id": 13,
+                "name": "Stabliator Trim",
+                "state": ["Set"]
+            },
+            {
+                "id": 14,
+                "name": "Flaps",
+                "state": ["Set", "Check"]
+            },
+            {
+                "id": 15,
+                "name": "Seat",
+                "state": ["Secure"]
+            },
+            {
+                "id": 16,
+                "name": "Door",
+                "state": ["Latched"]
+            },
+            {
+                "id": 17,
+                "name": "Harneses",
+                "state": ["Secure"]
+            },
+            {
+                "id": 18,
+                "name": "Take-off briefing",
+                "state": ["Completed"]
+            },
+            {
+                "id": 19,
+                "name": "Parking Brake",
+                "state": ["Release"]
+            }
+        ]
     }
+    
 ]
