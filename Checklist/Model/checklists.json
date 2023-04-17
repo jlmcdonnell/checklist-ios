@@ -1,7 +1,7 @@
 [
     {
         "id": 0,
-        "name": "After Start / Warm Up",
+        "name": "After Start",
         "aircraft": "p28r-201",
         "items": [
             {
@@ -83,12 +83,17 @@
                 "id": 15,
                 "name": "Altimeters",
                 "state": ["Set"]
+            },
+            {
+                "id": 16,
+                "name": "Log",
+                "state": ["Log Brakes off"]
             }
         ]
     },
     {
         "id": 1,
-        "name": "Taxi Check",
+        "name": "Taxi Checks",
         "aircraft": "p28r-201",
         "items": [
             {
@@ -141,7 +146,7 @@
             {
                 "id": 2,
                 "name": "Fuel Selector",
-                "state": ["Fullest Tank"]
+                "state": ["Change Tank"]
             },
             {
                 "id": 3,
@@ -347,6 +352,11 @@
             },
             {
                 "id": 19,
+                "name": "Log",
+                "state": ["Log take-off"]
+            },
+            {
+                "id": 20,
                 "name": "Parking Brake",
                 "state": ["Release"]
             }

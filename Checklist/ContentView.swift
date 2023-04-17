@@ -46,6 +46,7 @@ struct ChecklistView: View  {
         VStack {
             HStack {
                 Text(checklist.name)
+                    .font(.system(size: 28))
                 Spacer()
                 Button("Reset", action: { checkedItems.removeAll() })
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 12))
