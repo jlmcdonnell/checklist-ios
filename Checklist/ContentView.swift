@@ -73,7 +73,16 @@ struct ChecklistView: View  {
                 .cornerRadius(16)
                 .opacity(opacity)
                 .onTapGesture {
-                    checkedItems[i] = !(checkedItems[i] ?? false)
+                    let checked = checkedItems[i] ?? false
+                    if (checked) {
+                        for j in i...checkedItems.count {
+                            checkedItems[j] = false
+                        }
+                    } else {
+                        for j in 0...i {
+                            checkedItems[j] = true
+                        }
+                    }
                 }
             }
         }.frame(width: 500)
